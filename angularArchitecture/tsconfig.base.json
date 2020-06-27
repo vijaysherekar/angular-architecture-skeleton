@@ -23,6 +23,19 @@
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+    "fullTemplateTypeCheck": true,
+    "noImplicitAny": true,
+    "skipMetadataEmit": true,
+    "trace": true,
+    "strictInputTypes": true,
+    "strictNullInputTypes":true,
+    "strictAttributeTypes":true,
+    "strictSafeNavigationTypes":true,
+    "strictDomLocalRefTypes":true,
+   "strictOutputEventTypes":true,
+   "strictDomEventTypes":true,
+   "strictContextGenerics":true,
+   "strictLiteralTypes":true
   }
 }
