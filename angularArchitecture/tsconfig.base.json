@@ -26,7 +26,7 @@
     "strictTemplates": true,
     "fullTemplateTypeCheck": true,
     "noImplicitAny": true,
-    "skipMetadataEmit": true,
+    "skipMetadataEmit": false,
     "trace": true,
     "strictInputTypes": true,
     "strictNullInputTypes":true,
@@ -36,6 +36,7 @@
    "strictOutputEventTypes":true,
    "strictDomEventTypes":true,
    "strictContextGenerics":true,
-   "strictLiteralTypes":true
+   "strictLiteralTypes":true,
+   "strictMetadataEmit":true
   }
 }
