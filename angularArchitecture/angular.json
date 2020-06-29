@@ -35,12 +35,13 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
           },
           "configurations": {
-            "staging":{
+            "staging": {
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -107,6 +108,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
