@@ -6,7 +6,7 @@ import { HomeComponent } from './home.component';
 const routes: Routes = [
   {
     path: 'dashboard',
-    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule),
+    loadChildren: () => import('./feature/dashboard/dashboard.module').then(m => m.DashboardModule),
     data: { preload: false }
   },
   {

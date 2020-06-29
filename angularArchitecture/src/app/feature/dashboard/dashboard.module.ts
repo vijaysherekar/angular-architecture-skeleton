@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { SampleComponent } from './sample.component';
-import { SharedModule } from '../shared/shared.module';
+import {SharedModule} from './../../shared/shared.module'
 
 
 
