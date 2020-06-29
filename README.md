@@ -6,6 +6,8 @@ This project will help us to implement the best practices for angular including 
 4. Implementing DOM sanitization through pipes
 5. HTML interceptors
 6. Bundle analyzer setting -- which will help us to analyze the bundle composition
+7. Console logs on browser enable disable with the help of service also handling and notifying the errors to server
+8. Uncaught error/exception handling mechanism
 # Created the angular project with below command
 ng new angularArchitecture --strict --style=scss --verbose=true --routing=true --packageManager=npm --viewEncapsulation=ShadowDom
 # Add .gitignore file from the below path
