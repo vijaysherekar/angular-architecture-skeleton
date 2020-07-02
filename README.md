@@ -15,3 +15,9 @@ https://github.com/github/gitignore/blob/master/Node.gitignore
 
 # UI Components
 https://github.com/angular/flex-layout
+
+# Feature Module guards
+ng g guard core/guards/dashboard/dashboard  --dry-run
+
+# Building the app
+ng build --prod --configuration=staging --aot=true --buildOptimizer=true --deployUrl=http://localhost:4300/assets/ --extractCss=true --optimization=true --statsJson=true
