@@ -4,10 +4,13 @@ This project will help us to implement the best practices for angular including 
 2. Implementing Separation of Concerns by separating feature, shared and core modules etc
 3. Angular material as CSS framework library
 4. Implementing DOM sanitization through pipes
-5. HTML interceptors
+5. HTTP interceptors
 6. Bundle analyzer setting -- which will help us to analyze the bundle composition
 7. Console logs on browser enable disable with the help of service also handling and notifying the errors to server
 8. Uncaught error/exception handling mechanism
+9. Base Component to handle the unsubscription and module access to users
+10. Logger based on environment
+11. Dynamic import with jsonwebtoken
 # Created the angular project with below command
 ng new angularArchitecture --strict --style=scss --verbose=true --routing=true --packageManager=npm --viewEncapsulation=ShadowDom
 # Add .gitignore file from the below path
