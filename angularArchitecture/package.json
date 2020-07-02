@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --configuration=staging",
+    "build": "ng build --prod --configuration=staging --aot=true --buildOptimizer=true --deployUrl=http://localhost:4300/assets/ --extractCss=true --optimization=true --statsJson=true",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

@@ -1,4 +1,5 @@
 export const environment = {
   production: false,
-  staging: true
+  staging: true,
+  logLevel: 1
 };

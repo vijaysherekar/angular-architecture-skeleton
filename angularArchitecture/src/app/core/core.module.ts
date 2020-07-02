@@ -1,4 +1,5 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
+import { CustomErrorHandlerModule } from './custom-error-handler/custom-error-handler.module';
 
 export function throwIfAlreadyLoaded(parentModule: any, moduleName: string) {
   if (parentModule) {
@@ -10,8 +11,7 @@ export function throwIfAlreadyLoaded(parentModule: any, moduleName: string) {
 @NgModule({
   declarations: [],
   imports: [
-
-  ]
+CustomErrorHandlerModule]
 })
 export class CoreModule {
   constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
