@@ -1,6 +1,15 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { BaseComponent } from './base-component';
+import { ServiceLocator } from './service-locator';
+
+export class MockBaseComonent {
+
+}
+export class MockServiceLocator {
+
+}
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -11,6 +20,10 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      providers: [
+        { provide: BaseComponent, useClass: MockBaseComonent },
+        { provide: ServiceLocator, useClass: MockServiceLocator }
+      ]
     }).compileComponents();
   }));
 

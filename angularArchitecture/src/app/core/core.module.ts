@@ -6,6 +6,7 @@ import {CheckAccessService} from './common/check-access.service';
 import{UserDetailsService} from './common/user-details.service';
 import{ApplicationConstantsService} from './common/application-constants.service';
 import{CommonApiService} from './common/common-api.service';
+import { HttpClientModule } from '@angular/common/http';
 
 export function throwIfAlreadyLoaded(parentModule: any, moduleName: string) {
   if (parentModule) {
@@ -17,6 +18,7 @@ export function throwIfAlreadyLoaded(parentModule: any, moduleName: string) {
 @NgModule({
   declarations: [],
   imports: [
+    HttpClientModule,
     CustomErrorHandlerModule],
   providers: [
     CommonApiService,

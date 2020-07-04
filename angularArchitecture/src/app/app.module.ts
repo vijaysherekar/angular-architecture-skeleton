@@ -18,10 +18,10 @@ import { ServiceLocator } from './service-locator';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    CoreModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    AppRoutingModule,
+    CoreModule,
     SharedModule,
   ],
   providers: [],

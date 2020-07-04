@@ -6,8 +6,9 @@ export const environment = {
   production: false,
   staging:false,
   logLevel: 2,
-  hostApiUrl:"",
+  hostApiUrl:"http://localhost:80/api/",
   usesHTTPS: false,
+  defaultTimeout:"45000"
 };
 
 /*
