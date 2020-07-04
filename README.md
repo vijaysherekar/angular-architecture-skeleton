@@ -26,7 +26,7 @@ ng g guard core/guards/dashboard/dashboard  --dry-run
 ng build --prod --configuration=staging --aot=true --buildOptimizer=true --deployUrl=http://localhost:4300/assets/ --extractCss=true --optimization=true --statsJson=true
 
 
-#Few Points about application structure
+# Few Points about application structure
 1. Application has following types of modules
    1. Core
    2. Shared
