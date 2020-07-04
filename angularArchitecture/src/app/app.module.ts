@@ -9,7 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { SharedModule } from './shared/shared.module'
-import { AppInjector } from './app-injector';
+import { ServiceLocator } from './service-locator';
 
 @NgModule({
   declarations: [
@@ -29,6 +29,6 @@ import { AppInjector } from './app-injector';
 })
 export class AppModule {
   constructor(private injector: Injector) {
-    AppInjector.injector = injector;
+    ServiceLocator.injector = injector;
   }
 }

@@ -1,18 +1,17 @@
 import { Injector } from '@angular/core';
 
-export class AppInjector {
-
+export class ServiceLocator {
   public static injector: Injector;
 
   static setInjector(injector: Injector) {
 
-    AppInjector.injector = injector;
+    ServiceLocator.injector = injector;
 
   }
 
   static getInjector(): Injector {
 
-    return AppInjector.injector;
+    return ServiceLocator.injector;
 
   }
 

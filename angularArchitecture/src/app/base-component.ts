@@ -1,6 +1,6 @@
 import { OnInit, OnDestroy, Component, AfterViewInit } from '@angular/core';
 import { CustomLoggerService } from './core/logger/custom-logger.service';
-import { AppInjector } from './app-injector';
+import { ServiceLocator } from './service-locator';
 
 @Component({
   template:''
@@ -9,8 +9,7 @@ export class BaseComponent implements OnInit, OnDestroy , AfterViewInit{
   private logger: CustomLoggerService;
   constructor() {
 
-    // const injector = AppInjector.getInjector();
-    this.logger = AppInjector.injector.get(CustomLoggerService);
+    this.logger = ServiceLocator.injector.get(CustomLoggerService);
   }
   ngOnInit() {
     this.logger.log(`BaseComponent:ngOnInit:: called`);

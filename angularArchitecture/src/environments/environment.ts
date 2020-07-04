@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   staging:false,
   logLevel: 2,
-  hostApiUrl:""
+  hostApiUrl:"",
+  usesHTTPS: false,
 };
 
 /*
