@@ -1,6 +1,8 @@
 import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
+
 import { BaseComponent } from '../base-component';
 import { CustomLoggerService } from '../core/logger/custom-logger.service';
+import { HomeService } from './home.service';
 
 @Component({
   selector: 'app-home',
@@ -9,23 +11,19 @@ import { CustomLoggerService } from '../core/logger/custom-logger.service';
 })
 export class HomeComponent extends BaseComponent implements OnDestroy, OnInit, AfterViewInit {
 
-  _homeComponent: any;
-  constructor(private customLogger: CustomLoggerService) {
+  constructor(private customLogger: CustomLoggerService, private homeService: HomeService) {
     super();
-    this._homeComponent = {
-      test: ""
-    };
   }
 
   ngOnInit() {
+    this.homeService.getBasicDetails();
   }
   ngOnDestroy() {
-    debugger;
-    this.customLogger.log(`HomeComponent:ngOnDestroy:: called`);
+
+    this.homeService.ngDestroyHandler();
     super.ngOnDestroy();
   }
   ngAfterViewInit() {
     super.ngAfterViewInit();
-    this.customLogger.log(`HomeComponent:ngAfterViewInit:: called`);
   }
 }

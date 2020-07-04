@@ -7,6 +7,7 @@ import{UserDetailsService} from './common/user-details.service';
 import{ApplicationConstantsService} from './common/application-constants.service';
 import{CommonApiService} from './common/common-api.service';
 import { HttpClientModule } from '@angular/common/http';
+import { CustomSecurityPipe } from './pipes/custom-security.pipe';
 
 export function throwIfAlreadyLoaded(parentModule: any, moduleName: string) {
   if (parentModule) {
@@ -16,7 +17,7 @@ export function throwIfAlreadyLoaded(parentModule: any, moduleName: string) {
 }
 
 @NgModule({
-  declarations: [],
+  declarations: [CustomSecurityPipe],
   imports: [
     HttpClientModule,
     CustomErrorHandlerModule],

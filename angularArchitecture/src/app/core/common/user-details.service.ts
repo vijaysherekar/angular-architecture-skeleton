@@ -6,4 +6,8 @@ import { Injectable } from '@angular/core';
 export class UserDetailsService {
 
   constructor() { }
+
+  getJwtToken(){
+    return "vijay";
+  }
 }

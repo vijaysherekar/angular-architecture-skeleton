@@ -15,7 +15,7 @@ export class CustomErrorService implements ErrorHandler {
     };
 
     // Log  the error
-    this.logger.error(`CustomErrorService:handleError:: ${err} ${JSON.stringify(err)}`);
+    this.logger.error(`CustomErrorService:handleError:: ${err} ${JSON.stringify(err)} ${error}`);
 
   }
 }

@@ -7,7 +7,7 @@ export const environment = {
   staging:false,
   logLevel: 2,
   hostApiUrl:"http://localhost:80/api/",
-  usesHTTPS: false,
+  usesHTTPS: true,
   defaultTimeout:"45000"
 };
 
