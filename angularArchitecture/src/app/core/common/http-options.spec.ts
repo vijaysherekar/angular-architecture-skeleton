@@ -1,7 +1,7 @@
-import { HttpOptions } from './http-options';
+import { httpOptions } from './http-options';
 
 describe('HttpOptions', () => {
   it('should create an instance', () => {
-    expect(new HttpOptions()).toBeTruthy();
+    expect(httpOptions.headers).toBeTruthy();
   });
 });

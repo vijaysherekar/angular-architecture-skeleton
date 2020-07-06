@@ -4,9 +4,10 @@ import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatIconModule } from "@angular/material/icon";
 import { MatListModule } from "@angular/material/list";
 import { MatToolbarModule } from "@angular/material/toolbar";
-import {MatCardModule} from "@angular/material/card"
-
-
+import {MatCardModule} from "@angular/material/card";
+import {MatSliderModule} from "@angular/material/slider";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [],
@@ -16,7 +17,10 @@ import {MatCardModule} from "@angular/material/card"
     MatToolbarModule,
     MatIconModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatSliderModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   exports: [
     MatAutocompleteModule,
@@ -24,7 +28,10 @@ import {MatCardModule} from "@angular/material/card"
     MatToolbarModule,
     MatIconModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatSliderModule,
+    MatFormFieldModule,
+    MatInputModule
   ]
 
 })

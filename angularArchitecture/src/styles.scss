@@ -3,3 +3,69 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.container{
+  margin: 0 50px 0 50px;
+  padding: 0;
+}
+.appHeader{
+border-bottom: 1px solid black;
+}
+h1{
+  font-size: 26px;
+  font-weight: bold;
+}
+.headerTitle{
+padding: 10px;
+margin: 0;
+}
+.bodyWrapper{
+
+}
+.matSideNavContainer{
+  margin:0;
+  padding: 0;
+}
+
+.matSideNav{
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  border: 10px solid red($color: #000000);
+}
+
+.matDrawerSide{
+  width: 150px;
+}
+.matDrawareConainer
+{
+  position: inherit;
+}
+
+.matDrawerContent{
+margin: 0 0 0 10px;
+}
+
+.loginCard{
+justify-content: center;
+margin: 10px 100px;
+padding: 0;
+  left: 50%;
+   width: 300px;
+}
+.formWrapper{
+  position: inherit;
+}
+
+.appFooter{
+  background-color: grey;
+}
+
+.footerDiv{
+margin: 0;
+padding: 10px 0 10px 0;
+}
+
+.text-center{
+  text-align:center;
+}

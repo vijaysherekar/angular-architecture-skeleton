@@ -3,6 +3,7 @@ import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 import { BaseComponent } from '../base-component';
 import { CustomLoggerService } from '../core/logger/custom-logger.service';
 import { HomeService } from './home.service';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +12,8 @@ import { HomeService } from './home.service';
 })
 export class HomeComponent extends BaseComponent implements OnDestroy, OnInit, AfterViewInit {
 
+  email = new FormControl('', [Validators.required, Validators.email]);
+  hide = true;
   constructor(private customLogger: CustomLoggerService, private homeService: HomeService) {
     super();
   }
@@ -18,6 +21,16 @@ export class HomeComponent extends BaseComponent implements OnDestroy, OnInit, A
   ngOnInit() {
     this.homeService.getBasicDetails();
   }
+
+
+  getErrorMessage() {
+    if (this.email.hasError('required')) {
+      return 'You must enter a value';
+    }
+
+    return this.email.hasError('email') ? 'Not a valid email' : '';
+  }
+
   ngOnDestroy() {
 
     this.homeService.ngDestroyHandler();
