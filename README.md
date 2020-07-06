@@ -1,4 +1,4 @@
-# angularDemo
+# Angular Architechture Skeleton
 This project will help us to implement the best practices for angular including the following
 1. Project Folder Structure
 2. Implementing Separation of Concerns by separating feature, shared and core modules etc
