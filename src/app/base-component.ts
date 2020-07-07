@@ -6,7 +6,7 @@ import { ServiceLocator } from './service-locator';
   template:''
 })
 export class BaseComponent implements OnInit, OnDestroy , AfterViewInit{
-  private logger: CustomLoggerService;
+  protected logger: CustomLoggerService;
   constructor() {
 
     this.logger = ServiceLocator.injector.get(CustomLoggerService);

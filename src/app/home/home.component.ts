@@ -1,7 +1,6 @@
 import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 
 import { BaseComponent } from '../base-component';
-import { CustomLoggerService } from '../core/logger/custom-logger.service';
 import { HomeService } from './home.service';
 import { FormControl, Validators } from '@angular/forms';
 
@@ -14,11 +13,12 @@ export class HomeComponent extends BaseComponent implements OnDestroy, OnInit, A
 
   email = new FormControl('', [Validators.required, Validators.email]);
   hide = true;
-  constructor(private customLogger: CustomLoggerService, private homeService: HomeService) {
+  constructor(private homeService: HomeService) {
     super();
   }
 
   ngOnInit() {
+    this.logger.log(`HomeComponent:ngOnInit:: logger used from base component`);
     this.homeService.getBasicDetails();
   }
 
