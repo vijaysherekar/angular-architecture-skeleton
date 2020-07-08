@@ -70,7 +70,7 @@ The business requirements are divided into multiple modules. Each feature module
 4. Routing will have canActivate guard 
 
 ##### Shared
-This module will be referenced into all the feature modules. It has following contains
+This module will be referenced into all the feature modules. It has following items
    1. Angular Material Module
 
 #### Component Inheritance
