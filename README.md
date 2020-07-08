@@ -74,12 +74,12 @@ This module will be referenced into all the feature modules. It has following it
    1. Angular Material Module
 
 #### Component Inheritance
-Component Inheritance will help us to achieve below objectives
+Component Inheritance will help to achieve below objectives
 - Inject services which are common for all components
 - As mentioned above this application will help to achieve both module level and operation level access to user for the respective module as per the configuration
 - Unsubscribing and nullfying the properties and variables of component
 #### Error Handling
-Error handling will help us to log the errors effectively and if require application can report those to server
+Error handling will help to log the errors effectively and if require application can report those to server
 #### Logging
 According to log level mentioned in the environment file for various environment such as environment.stagging.ts. Application will print the logs on browser or report it to server if needed
 #### Separation of Concerns
@@ -87,7 +87,7 @@ Explain this point in Folder Structure
 #### HTTP Interceptors
 Currently we have added auth and ensure http interceptors, we can also add new interceptor which will send sanitized data to server
 #### Dynamic Import
-This feature will help us to prevent the dependancies directly inject into module chunks. In our application we have used it at two places
+This feature will help to prevent the dependancies directly inject into module chunks. In our application we have used it at two places
 1. Lazy loading of modules
 2. Importing of JSONWEBTOKEN module
 ## References
