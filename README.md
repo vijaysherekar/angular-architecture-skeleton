@@ -79,9 +79,9 @@ Component Inheritance will help to achieve below objectives
 - As mentioned above this application will help to achieve both module level and operation level access to user for the respective module as per the configuration
 - Unsubscribing and nullfying the properties and variables of component
 #### Error Handling
-Error handling will help to log the errors effectively and if require application can report those to server
+Error handling will help to log the errors effectively and if required application can report those to server
 #### Logging
-According to log level mentioned in the environment file for various environment such as environment.stagging.ts. Application will print the logs on browser or report it to server if needed
+logLevel property present in environment file, will help to print logs on browser or report it to server if required
 #### Separation of Concerns
 Explain this point in Folder Structure
 #### HTTP Interceptors
