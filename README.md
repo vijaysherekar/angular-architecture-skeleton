@@ -63,11 +63,11 @@ Core module provides the pre-requisites to run the application. It imported only
       3. Common API 
       4. Check Access Service will check the respective logged in user has the rights to access the modules or not. It also helps to check user has read and write access for the accessible module
 ##### Feature 
-All the business requirement which is divided into multiple modules. Each feature module has the following
-      1. Multiple components 
-      2. Every components will have service, which will do all the business logic and refered in the corresponding component
-      3. Every module will have data service, which will calls the respective api (Specifically for falcor api to create request object)
-      4. Routing will have canActivate guard 
+The business requirements are divided into multiple modules. Each feature module has the following
+1. Multiple components 
+2. Every component will have service, which will do all the business logic and refered in the corresponding component
+3. Every module will have data service, which will calls the respective api (Specifically for falcor api to create request object)
+4. Routing will have canActivate guard 
 
 ##### Shared
 This module will be referenced into all the feature modules. It has following contains
