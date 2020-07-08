@@ -1,5 +1,5 @@
 # Angular Architecture Skeleton
-Develop production ready Angular application. This is a small attempt to help and contribute to the angular community. The approaches suggested below are not the only option you are free to implement suitable approaches. This document prefers the approaches I learnt from my experience
+Develop production ready Angular application. This is a small attempt to help and contribute to the angular community. The guidelines suggested below are purely from my experience, you can implement your own as well.
 - [Project Details](#project-details) - Explain internals of application
 
 This app works on all morden browsers. 
