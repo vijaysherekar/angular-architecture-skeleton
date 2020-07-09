@@ -15,10 +15,11 @@ export class HomeComponent extends BaseComponent implements OnDestroy, OnInit, A
   hide = true;
   constructor(private homeService: HomeService) {
     super();
+    this.isAuthenticated = false;
   }
 
   ngOnInit() {
-    this.logger.log(`HomeComponent:ngOnInit:: logger used from base component`);
+
     this.homeService.getBasicDetails();
   }
 

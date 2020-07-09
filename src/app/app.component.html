@@ -6,7 +6,7 @@
       </div>
     </div>
   </header>
-  <div class="bodyWrapper">
+  <div *ngIf="isAuthenticated" class="bodyWrapper">
     <mat-sidenav-container class="matSideNavContainer">
       <mat-sidenav class="matSideNav">Start</mat-sidenav>
       <mat-sidenav class="matSideNav" position="end">End</mat-sidenav>
@@ -17,6 +17,15 @@
           <router-outlet></router-outlet>
         </mat-drawer-content>
       </mat-drawer-container>
+    </mat-sidenav-container>
+  </div>
+  <div *ngIf="!isAuthenticated" class="bodyWrapper">
+    <mat-sidenav-container class="matSideNavContainer">
+      <mat-sidenav class="matSideNav">Start</mat-sidenav>
+      <mat-sidenav class="matSideNav" position="end">End</mat-sidenav>
+
+      <router-outlet></router-outlet>
+
     </mat-sidenav-container>
   </div>
   <footer class="appFooter">
