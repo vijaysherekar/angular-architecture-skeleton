@@ -1,37 +1,38 @@
-<div class="container">
-  <header class="appHeader">
-    <div class="row">
-      <div class="col S12 m4 l2">
-        <h1 class="h1 headerTitle">Angular Architecture Skeleton</h1>
-      </div>
+<div class="container-fluid">
+    <header class="appHeader">
+        <div class="row">
+            <div class="col S12 m4 l2">
+                <h1 class="h1 headerTitle">Angular Architecture Skeleton</h1>
+            </div>
+        </div>
+    </header>
+    <div *ngIf="isAuthenticated" class="bodyWrapper">
+        <mat-sidenav-container class="matSideNavContainer">
+            <mat-sidenav class="matSideNav">Start</mat-sidenav>
+            <mat-sidenav class="matSideNav" position="end">End</mat-sidenav>
+
+            <mat-drawer-container class="matDrawareConainer">
+                <mat-drawer #drawer class="matDrawerSide" mode="side" opened>Drawer content</mat-drawer>
+                <mat-drawer-content class="matDrawerContent">
+                    <router-outlet></router-outlet>
+                </mat-drawer-content>
+            </mat-drawer-container>
+
+        </mat-sidenav-container>
     </div>
-  </header>
-  <div *ngIf="isAuthenticated" class="bodyWrapper">
-    <mat-sidenav-container class="matSideNavContainer">
-      <mat-sidenav class="matSideNav">Start</mat-sidenav>
-      <mat-sidenav class="matSideNav" position="end">End</mat-sidenav>
+    <div *ngIf="!isAuthenticated" class="bodyWrapper">
+        <mat-sidenav-container class="matSideNavContainer">
+            <mat-sidenav class="matSideNav">Start</mat-sidenav>
+            <mat-sidenav class="matSideNav" position="end">End</mat-sidenav>
 
-      <mat-drawer-container class="matDrawareConainer">
-        <mat-drawer class="matDrawerSide" mode="side" opened>Drawer content</mat-drawer>
-        <mat-drawer-content class="matDrawerContent">
-          <router-outlet></router-outlet>
-        </mat-drawer-content>
-      </mat-drawer-container>
-    </mat-sidenav-container>
-  </div>
-  <div *ngIf="!isAuthenticated" class="bodyWrapper">
-    <mat-sidenav-container class="matSideNavContainer">
-      <mat-sidenav class="matSideNav">Start</mat-sidenav>
-      <mat-sidenav class="matSideNav" position="end">End</mat-sidenav>
+            <router-outlet></router-outlet>
 
-      <router-outlet></router-outlet>
-
-    </mat-sidenav-container>
-  </div>
-  <footer class="appFooter">
-    <div class="footerDiv text-center">
-      © 2020 Copyright:
-      <a href="https://sherekar.com/">sherekar.com</a>
+        </mat-sidenav-container>
     </div>
-  </footer>
+    <footer class="appFooter">
+        <div class="footerDiv text-center">
+            © 2020 Copyright:
+            <a href="https://sherekar.com/">sherekar.com</a>
+        </div>
+    </footer>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
+import { Component, OnInit, OnDestroy, AfterViewInit, ViewEncapsulation } from '@angular/core';
 
 import { BaseComponent } from '../base-component';
 import { HomeService } from './home.service';
@@ -7,7 +7,8 @@ import { FormControl, Validators } from '@angular/forms';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  
 })
 export class HomeComponent extends BaseComponent implements OnDestroy, OnInit, AfterViewInit {
 

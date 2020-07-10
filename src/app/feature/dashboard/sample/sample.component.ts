@@ -7,7 +7,6 @@ import { BaseComponent } from 'src/app/base-component';
   styleUrls: ['./sample.component.scss']
 })
 export class SampleComponent extends BaseComponent implements OnInit {
-
   constructor() {
     super();
     this.isAuthenticated = true;

@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build-staging": "ng build --prod --configuration=staging --aot=true --buildOptimizer=true --deployUrl=http://localhost:4300/assets/ --extractCss=true --optimization=true --statsJson=true",
-    "build-production":"ng build --prod --configuration=production --aot=true --buildOptimizer=true --extractCss=true --optimization=true"
+    "build-production": "ng build --prod --configuration=production --aot=true --buildOptimizer=true --extractCss=true --optimization=true"
   },
   "private": true,
   "dependencies": {
