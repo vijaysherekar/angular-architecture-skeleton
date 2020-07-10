@@ -3,7 +3,6 @@ import { Component, OnInit, OnDestroy, AfterViewInit, ViewEncapsulation } from '
 import { BaseComponent } from '../base-component';
 import { HomeService } from './home.service';
 import { FormControl, Validators } from '@angular/forms';
-import { StandardDataService } from '../core/state-management/standard-data.service';
 import { StandardData } from '../core/entities/standard-data';
 
 @Component({
@@ -16,16 +15,13 @@ export class HomeComponent extends BaseComponent implements OnDestroy, OnInit, A
 
   email = new FormControl('', [Validators.required, Validators.email]);
   hide = true;
-  constructor(private homeService: HomeService, private standardDatautility: StandardDataService) {
+  constructor(private homeService: HomeService) {
     super();
-    this.isAuthenticated = false;
   }
 
   ngOnInit() {
 
-   // this.homeService.getBasicDetails();
   }
-
 
   getErrorMessage() {
     if (this.email.hasError('required')) {

@@ -22,9 +22,8 @@ export class AppComponent extends BaseComponent implements OnInit, OnDestroy {
 
   subscriptionList() {
     this.standardDataSubscription = this.standardDataService.standardDataChanges.subscribe((result: StandardData | null) => {
-      this.logger.log(`AppComponent:subscriptionList:: called`);
+
       if (!result) {
-        this.logger.error(`AppComponent:subscriptionList:: Received data is empty`);
         return;
       }
       if (!(result.routeName && result.routeName.toLowerCase() === "home")) {
@@ -36,7 +35,6 @@ export class AppComponent extends BaseComponent implements OnInit, OnDestroy {
     });
   }
   ngOnInit() {
-    this.logger.log(`AppComponent:ngOnInit:: called`);
     this.subscriptionList();
   }
   ngOnDestroy() {
