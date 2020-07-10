@@ -3,25 +3,27 @@ import { Component, OnInit, OnDestroy, AfterViewInit, ViewEncapsulation } from '
 import { BaseComponent } from '../base-component';
 import { HomeService } from './home.service';
 import { FormControl, Validators } from '@angular/forms';
+import { StandardDataService } from '../core/state-management/standard-data.service';
+import { StandardData } from '../core/entities/standard-data';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  
+
 })
 export class HomeComponent extends BaseComponent implements OnDestroy, OnInit, AfterViewInit {
 
   email = new FormControl('', [Validators.required, Validators.email]);
   hide = true;
-  constructor(private homeService: HomeService) {
+  constructor(private homeService: HomeService, private standardDatautility: StandardDataService) {
     super();
     this.isAuthenticated = false;
   }
 
   ngOnInit() {
 
-    this.homeService.getBasicDetails();
+   // this.homeService.getBasicDetails();
   }
 
 
@@ -40,5 +42,10 @@ export class HomeComponent extends BaseComponent implements OnDestroy, OnInit, A
   }
   ngAfterViewInit() {
     super.ngAfterViewInit();
+    const _standardData = new StandardData();
+    _standardData.routeName = 'home';
+    _standardData.data = null;
+    this.standardDatautility.addNewValue(_standardData);
+    this.standardDatautility.closeTheDataFlow();
   }
 }

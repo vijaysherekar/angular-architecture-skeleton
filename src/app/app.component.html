@@ -2,11 +2,11 @@
     <header class="appHeader">
         <div class="row">
             <div class="col S12 m4 l2">
-                <h1 class="h1 headerTitle">Angular Architecture Skeleton</h1>
+                <h1 class="h1 headerTitle">Angular Architecture Skeleton {{isHomePage$}}</h1>
             </div>
         </div>
     </header>
-    <div *ngIf="isAuthenticated" class="bodyWrapper">
+    <div *ngIf="!isHomePage$" class="bodyWrapper">
         <mat-sidenav-container class="matSideNavContainer">
             <mat-sidenav class="matSideNav">Start</mat-sidenav>
             <mat-sidenav class="matSideNav" position="end">End</mat-sidenav>
@@ -20,7 +20,7 @@
 
         </mat-sidenav-container>
     </div>
-    <div *ngIf="!isAuthenticated" class="bodyWrapper">
+    <div *ngIf="isHomePage$" class="bodyWrapper">
         <mat-sidenav-container class="matSideNavContainer">
             <mat-sidenav class="matSideNav">Start</mat-sidenav>
             <mat-sidenav class="matSideNav" position="end">End</mat-sidenav>

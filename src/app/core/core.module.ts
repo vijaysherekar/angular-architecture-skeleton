@@ -8,6 +8,7 @@ import{ApplicationConstantsService} from './common/application-constants.service
 import{CommonApiService} from './common/common-api.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CustomSecurityPipe } from './pipes/custom-security.pipe';
+import{StandardDataService} from './state-management/standard-data.service';
 
 export function throwIfAlreadyLoaded(parentModule: any, moduleName: string) {
   if (parentModule) {
@@ -26,6 +27,7 @@ export function throwIfAlreadyLoaded(parentModule: any, moduleName: string) {
     ApplicationConstantsService,
     CheckAccessService,
     UserDetailsService,
+    StandardDataService,
     httpInterceptorProviders
   ]
 })
