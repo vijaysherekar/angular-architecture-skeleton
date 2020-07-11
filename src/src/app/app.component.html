@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <header class="appHeader">
+        <div class="row">
+            <div class="col S12 m4 l2">
+                <h1 class="h1 headerTitle">Angular Architecture Skeleton</h1>
+            </div>
+        </div>
+    </header>
+
+    <div *ngIf="!isHomePage$" class="bodyWrapper">
+        <router-outlet></router-outlet>
+    </div>
+    <div *ngIf="isHomePage$" class="bodyWrapper">
+        <mat-sidenav-container>
+            <mat-sidenav #sidenav [fixedInViewport]="true" #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')" (closed)="events.push('close!')">
+                <mat-nav-list>
+                    <a mat-list-item> Accounts </a>
+                    <a mat-list-item> Create Account </a>
+                    <a mat-list-item> Contacts </a>
+                    <a mat-list-item> Create Contact </a>
+
+                    <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+                </mat-nav-list>
+
+            </mat-sidenav>
+            <mat-sidenav-content>
+                <button mat-button (click)="sidenav.toggle()">Toggle sidenav</button>
+                <router-outlet></router-outlet>
+            </mat-sidenav-content>
+        </mat-sidenav-container>
+    </div>
+    <footer class="appFooter">
+        <div class="footerDiv text-center">
+            © 2020 Copyright:
+            <a href="https://sherekar.com/">sherekar.com</a>
+        </div>
+    </footer>
+</div>

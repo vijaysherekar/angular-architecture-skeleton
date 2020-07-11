@@ -1,0 +1,126 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+// .container{
+//   margin: 0 50px 0 50px;
+//   padding: 0;
+// }
+.appHeader {
+    background: gray;
+    color: #fff;
+    // border-bottom: 1px solid black;
+}
+
+.bodyWrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.headerTitle {
+    padding: 10px;
+    margin: 0;
+}
+
+.matSideNavContainer {
+    margin: 0;
+    padding: 0;
+}
+
+.matSideNav {
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    border: 10px solid red($color: #000000);
+}
+
+.mat-form-field {
+    width: 100%;
+}
+
+mat-card.mat-card.mat-focus-indicator {
+    width: 45%;
+    margin-top: 30px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.matDrawerSide {
+    width: 150px;
+}
+
+.matDrawareConainer {
+    position: inherit;
+}
+
+.matDrawerContent {
+    margin: 0 0 0 10px;
+}
+
+.loginCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formWrapper {
+    position: inherit;
+}
+
+.appFooter {
+    background-color: grey;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    /* Height of the footer */
+}
+
+.footerDiv {
+    margin: 0;
+    padding: 10px 0 10px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mat-card-header-text {
+    margin: 0 0 !important;
+}
+
+.mat-card-header .mat-card-title {
+    margin-bottom: 20px;
+}
+
+.mat-card>.mat-card-actions:last-child {
+    margin-bottom: 5px !important;
+}
+
+.login {
+    margin-left: 10px;
+    margin-right: 20px;
+    padding: 5px 15px 5px 15px;
+}
+
+.cancel {
+    padding: 5px 15px 5px 15px;
+}
+
+.mat-form-field-wrapper {
+    margin-top: 10px;
+}
