@@ -6,7 +6,7 @@
             </div>
         </div>
     </header>
-    <div *ngIf="isAuthenticated" class="bodyWrapper">
+    <div *ngIf="!isHomePage$" class="bodyWrapper">
         <mat-sidenav-container class="matSideNavContainer">
             <mat-sidenav class="matSideNav">Start</mat-sidenav>
             <mat-sidenav class="matSideNav" position="end">End</mat-sidenav>
@@ -20,7 +20,7 @@
 
         </mat-sidenav-container>
     </div>
-    <div *ngIf="!isAuthenticated" class="bodyWrapper">
+    <div *ngIf="isHomePage$" class="bodyWrapper">
         <mat-sidenav-container class="matSideNavContainer">
             <mat-sidenav class="matSideNav">Start</mat-sidenav>
             <mat-sidenav class="matSideNav" position="end">End</mat-sidenav>
