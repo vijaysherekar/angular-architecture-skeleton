@@ -27,7 +27,7 @@ export class SampleComponent extends BaseComponent implements OnInit, AfterViewI
 
   ngAfterViewInit() {
     const _standardData = new StandardData();
-    _standardData.routeName = 'home';
+    _standardData.routeName = 'sample';
     _standardData.data = null;
     this.standardDatautility.addNewValue(_standardData);
     this.standardDatautility.closeTheDataFlow();
