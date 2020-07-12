@@ -13,10 +13,14 @@ export class AppComponent extends BaseComponent implements OnInit, OnDestroy {
   title = 'angularArchitecture';
   standardDataSubscription: any;
   isHomePage$: boolean;
+  opened: boolean;
+   events: string[] = [];
+
   constructor(private standardDataService: StandardDataService) {
     super();
     this.standardDataSubscription = null;
     this.isHomePage$ = true;
+    this.opened = true;
 
   }
 
