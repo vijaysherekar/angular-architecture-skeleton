@@ -9,6 +9,6 @@ if (environment.production) {
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule, {
-  defaultEncapsulation: ViewEncapsulation.ShadowDom
+  defaultEncapsulation: ViewEncapsulation.Emulated
 })
-.catch(err => console.error(`Main:bootstrapModule: Application bootstrap error is ${err} ${JSON.stringify(err)}`));
+  .catch(err => console.error(`Main:bootstrapModule: Application bootstrap error is ${err} ${JSON.stringify(err)}`));
