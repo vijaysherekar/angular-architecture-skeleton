@@ -20,6 +20,6 @@ export class StandardDataService {
     this.standardData.next(newValue);
   }
   closeTheDataFlow() {
-    this.standardData.complete();
+    // this.standardData.complete();
   }
 }
